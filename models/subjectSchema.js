@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const subjectsSchema = new Schema({
     title:  {type:String, default :'hello', required: true}, // String is shorthand for {type: String}
     description : String,
+    //tableau de vote 
   },{
       // best practce
       versionKey: false,// for desactiving __v on mongoDB,

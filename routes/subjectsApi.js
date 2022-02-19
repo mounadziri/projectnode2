@@ -4,7 +4,7 @@ const router = express.Router();
 //use the model
 const Subject =  require ("../models/subjectSchema");
 
-// get all todo : get bch nrécupéri ml serveur
+// get all  : get bch nrécupéri ml serveur
 router.get('/subjects', async (req, res) => {
     try {
         const subjects = await Subject.find({});
