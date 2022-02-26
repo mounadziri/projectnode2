@@ -9,7 +9,7 @@ const userSchema = new Schema({
   password:  {type:String, required: true},
   age: Number,
   subjects : [{type : mongoose.Types.ObjectId , ref : 'subjects'}],
-  votes : [{type : mongoose.Types.ObjectId , ref : 'votes'}]
+  votes : [{type : mongoose.Types.ObjectId , ref : 'votes'}],
 },{versionKey : false , timestamps : true });
 
 // create the user model
