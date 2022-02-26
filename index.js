@@ -19,12 +19,17 @@ app.get('/', (req, res) => {
     res.json({messasage :'hello mouna'})
   });
 
- //todo api
+ //subject api
 const subjectApi = require ('./routes/subjectsApi');
 app.use('/api/v1', subjectApi); 
 //user api
 const userApi = require ('./routes/userApi');
 app.use('/api/v1', userApi)
+
+ //vote api
+ const voteApi = require ('./routes/voteApi');
+ app.use('/api/v1', voteApi); 
+
 
 app.listen(port, () => { 
     console.log(`Application listening at http://localhost:${port}`)
