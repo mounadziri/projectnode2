@@ -30,6 +30,10 @@ app.use('/api/v1', userApi)
  const voteApi = require ('./routes/voteApi');
  app.use('/api/v1', voteApi); 
 
+ //percentage api
+ const percentage = require ('./routes/percentage');
+ app.use('/api/v1', percentage); 
+
 
 app.listen(port, () => { 
     console.log(`Application listening at http://localhost:${port}`)

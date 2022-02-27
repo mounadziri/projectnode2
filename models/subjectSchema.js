@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const subjectsSchema = new Schema({
     title:  {type:String, default :'hello', required: true}, // String is shorthand for {type: String}
     description : String,
-    vote : {type : mongoose.Types.ObjectId , ref : 'vote'},
+    votes : [{type : mongoose.Types.ObjectId , ref : 'votes'}],
   },{
       // best practce
       versionKey: false,// for desactiving __v on mongoDB,
